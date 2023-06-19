@@ -7,219 +7,63 @@
 }
 
 body {
-  position: relative;
-  padding: 20px 50px 20px 50px;
-  background-image: url("../img/city.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
+  background-color: #F5F5F5;
 }
 
-.login-header {
-  color: white;
-  position: relative;
-}
-.logo img{
-  width: 110px;
-  height: 110px;
-  position: absolute;
-  left: 500px;
-  top: 20px;
-  transition: 0.5s;
+body::before {
+  display: block;
+  content: '';
+  height: 55px;
 }
 
-.login-navbar-link {
-  padding-left: 10px;
+.navbar-padding {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.custom-container {
+  margin: 30px 60px 30px 60px;
+}
+
+.box-col {
+  margin: 0 2px 0 2px;
+  padding: 35px;
+  background-color: white;
+}
+
+/* home page tab */
+.nav-tabs .nav-item .nav-link {
+  background-color: #d6dbdf; /* Background color for inactive tab */
+}
+
+.nav-tabs .nav-item .nav-link.active {
+  background-color: #fff; /* Background color for active tab */
+  color: #566573;
+}
+
+.btn-icon {
   padding-right: 10px;
 }
 
-.nav .nav-link.login-navbar-link {
-  color: white;
-  transition: color 0.3s ease-in-out;
+.bg-heading {
+  background-color: #566573;
 }
 
-.nav .nav-link.login-navbar-link:hover,
-.nav .nav-link.login-navbar-link:focus {
-  color: #0d6efd;
-}
-.text-white{
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-}
-#login-address {
-  font-size: 0.8em;
+.bg-encoding-data {
+  background-color: #f4f6f6;
+  padding: 20px;
 }
 
-#login-welcome-text {
-  font-size: clamp(1.8rem, 2.5vw, 2.8rem);
+.bg-encoding-data p {
+  padding: 10px;
+  text-align: justify;
 }
 
-#login-office-text {
-  font-size: clamp(2rem, 2.8vw, 3.5rem);
-  white-space: nowrap;
-  font-weight: 700;
+.heading-gray {
+  color: #566573;
 }
 
-#login-forgot {
+#btn-logout {
   text-decoration: none;
-  font-weight: 600;
-}
-
-.login-form-container {
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 400px;
-  padding: 40px;
-  /* float: right; */
-  border-radius: 20px;
-
-}
-
-.login-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.login-form h3 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.login-form .form-group {
-  margin-bottom: 15px;
-}
-
-.login-form label {
-  font-weight: bold;
-}
-
-.login-form input[type="text"],
-.login-form input[type="password"] {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.login-form button {
   width: 100%;
 }
-.description-login{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-@media only screen and (max-width: 1000px){
-  .logo img{
-    position: absolute;
-    left: 200px;
-    top: 50px;
-  }
-}
-@media only screen and (max-width: 1450px){
-  .logo img{
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    left: 300px;
-    top: 30px;
-  }
-  .description-login{
-    flex-direction: column;
-  }
-}
-@media only screen and (max-width: 1427px){
-  .logo img{
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    left: 300px;
-    top: 30px;
-  }
-  .description-login{
-    flex-direction: column;
-  }
-}
-@media only screen and (max-width: 1153px){
-  .logo img{
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    left: 200px;
-    top: 30px;
-  }
-}
-
-@media only screen and (max-width: 950px){
-  .logo img{
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    left: 150px;
-    top: 30px;
-  }
-}
-
-@media only screen and (max-width: 865px){
-  .logo img{
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    left: 100px;
-    top: 30px;
-  }
-}
-@media only screen and (max-width: 740px){
-  .logo img{
-    width: 90px;
-    height: 90px;
-    position: absolute;
-    left: 50px;
-    top: 30px;
-  }
-  .description-login{
-    flex-direction: column;
-  }
-}
-@media only screen and (max-width: 713px){
-  .logo img{
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    left: 80px;
-    top: 30px;
-  }
-  .description-login{
-    flex-direction: column;
-  }
-}
-@media only screen and (max-width: 668px){
-  .logo img{
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    left: 40px;
-    top: 30px;
-  }
-}
-@media only screen and (max-width: 664px){
-  .logo img{
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    left: 20px;
-    top: 30px;
-  }
-}
-@media only screen and (max-width: 376px){
-  .text-white{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-}
-
-
